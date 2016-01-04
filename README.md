@@ -15,6 +15,8 @@ telling the RPi to shut down, detecting when shutdown has finished, and
 switching off the auxiliary power. There should be a LED that stays lit until
 the power is really off, maybe the RPi has one of its own.
 
+![Shutdown circuit schematic](https://raw.githubusercontent.com/wware/gitbox/master/RPiPowerDown2.png)
+
 I spent some time playing with both Gitlab and Gogs, and ultimately
 settled upon a vanilla
 [Git server](https://git-scm.com/book/en/v1/Git-on-the-Server) using
