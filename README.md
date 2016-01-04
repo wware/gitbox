@@ -25,7 +25,7 @@ to actual RPi development.
 ```bash
 docker build -t gitbox .
 docker run -d -p 80:80 -v /opt/git:/opt/git --name=gitbox gitbox
-docker inspect gitbox | grep IPAddress
+docker inspect --format='{{.NetworkSettings.IPAddress}}' gitbox
 ```
 
 It's a good idea to put an entry for "gitbox" in `/etc/hosts`.
