@@ -6,14 +6,11 @@ This is a hardware project to assist software development. The hardware comprise
 * A Raspberry Pi model B+
 * 128 GB USB stick for $28 - http://www.amazon.com/SanDisk-Ultra-128GB-Flash-SDCZ43-128G-G46/dp/B00YFI1EBC
 * A 16x2 LCD display for showing the IP address
-* A backup battery, MOSFET, boost converter, and Arduino Pico (or equivalent)
+* A backup battery circuit for graceful shutdown of the RPi
 * Maybe a nice case? http://www.adafruit.com/products/1985
 
-The backup battery, MOSFET, boost converter and Arduino have the job of
-detecting that the power cord has been pulled, supplying auxiliary power,
-telling the RPi to shut down, detecting when shutdown has finished, and
-switching off the auxiliary power. There should be a LED that stays lit until
-the power is really off, maybe the RPi has one of its own.
+The backup battery circuit has the job of detecting that the power cord has been pulled,
+telling the RPi to shut down, and supplying auxiliary power until shutdown is finished.
 
 ![Shutdown circuit schematic](https://raw.githubusercontent.com/wware/gitbox/master/RPiPowerDown2.png)
 
