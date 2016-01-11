@@ -11,8 +11,7 @@ This is a hardware project to assist software development. The hardware comprise
 
 The backup battery circuit has the job of detecting that the power cord has been pulled,
 telling the RPi to shut down, and supplying auxiliary power until shutdown is finished.
-
-![Shutdown circuit schematic](https://raw.githubusercontent.com/wware/gitbox/master/RPiPowerDown2.png)
+See [the blog post](http://willware.blogspot.com/2016/01/graceful-shutdown-for-raspberry-pi.html) for details.
 
 I spent some time playing with both Gitlab and Gogs, and ultimately
 settled upon a vanilla
