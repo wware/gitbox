@@ -20,7 +20,7 @@ Later I might tinker with Gitlab or Gogs.
 
 I did some tinkering in a Docker image before moving on to the physical RPi.
 
-```bash
+```
 docker build -t gitbox .
 docker run -d -p 80:80 -v /opt/git:/opt/git --name=gitbox gitbox
 docker inspect --format='{{.NetworkSettings.IPAddress}}' gitbox
@@ -30,7 +30,7 @@ It's a good idea to put an entry for "gitbox" in `/etc/hosts` of your dev machin
 
 Creating a git repo is a bit of a chore. Given a repository foo, do this.
 
-```bash
+```
 git clone --bare foo foo.git
 scp -r foo.git gitbox:/opt/git/foo.git
 ```
